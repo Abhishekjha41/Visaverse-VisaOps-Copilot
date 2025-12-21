@@ -57,7 +57,7 @@ export function HoverBorderGradient({
   }, [hovered]);
 
   // FIX: Explicitly cast Tag to React.ElementType to resolve the 'never' type inference
-  const Component = Tag as React.ElementType;
+  const Component = Tag as any;
 
   return (
     <Component
