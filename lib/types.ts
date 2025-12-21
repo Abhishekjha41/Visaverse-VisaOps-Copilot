@@ -1,5 +1,3 @@
-// src/types.ts
-
 export interface VisaStrategy {
   primaryPath: string;
   backupPaths: string[];
@@ -60,15 +58,14 @@ export interface PlanResponse {
   relocationTips: string[];
 }
 
-export interface DocumentCheckIssue {
-  type: "missing-info" | "low-quality" | "inconsistency" | "warning";
-  severity: "low" | "medium" | "high";
-  message: string;
-  suggestion: string;
-}
 
 export interface DocumentCheckResponse {
   overallAssessment: string;
   rejectionProbability: "Low" | "Medium" | "High";
-  issues: DocumentCheckIssue[];
+  issues: {
+    type: "missing-info" | "low-quality" | "inconsistency" | "warning";
+    severity: "low" | "medium" | "high";
+    message: string;
+    suggestion: string;
+  }[];
 }

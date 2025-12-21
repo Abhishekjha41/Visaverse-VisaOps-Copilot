@@ -1,7 +1,7 @@
 // lib/api.ts
 import type { PlanResponse, DocumentCheckResponse } from "./types";
 
-const API_BASE = process.env.NEXT_PUBLIC_API_BASE || "http://localhost:3001";
+const API_BASE = process.env.NEXT_PUBLIC_API_BASE || "https://visaverse-visaops-copilot-backend.vercel.app/"
 
 export async function generatePlan(payload: any): Promise<PlanResponse> {
   const res = await fetch(`${API_BASE}/api/plan`, {
