@@ -23,7 +23,7 @@ export function VisaComparisonTable({ options }: { options: Row[] }) {
               </td>
               <td className="px-6 py-4">
                   <div className="flex items-center gap-2">
-                     <span className="text-white">{v.approvalProbability}%</span>
+                     <span className="text-white">{v.approvalProbability < 1 ? v.approvalProbability * 100 : v.approvalProbability}%</span>
                      <div className="w-16 h-1.5 bg-white/10 rounded-full overflow-hidden">
                         <div className="h-full bg-slate-400 group-hover:bg-cyan-500 transition-colors" style={{ width: `${v.approvalProbability}%`}} />
                      </div>
