@@ -13,7 +13,7 @@ export function ApprovalSimulator({ data }: { data: ApprovalSimulation }) {
                 <ShieldCheck className="w-4 h-4 text-cyan-400" />
                 Approval Probability
             </span>
-            <span className="text-2xl font-bold text-white">{data.approvalProbability}%</span>
+            <span className="text-2xl font-bold text-white">{data.approvalProbability < 1 ? data.approvalProbability * 100 : data.approvalProbability}%</span>
         </div>
         
         {/* Custom Progress Bar */}
