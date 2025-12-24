@@ -165,13 +165,15 @@ export default function Page() {
                 <SparklesIcon className="w-5 h-5 ml-2 text-purple-600" />
               </Button>
               
-              <Button
-                variant="outline"
-                size="lg"
-                className="h-14 px-8 rounded-2xl border-white/10 bg-white/5 text-white hover:bg-white/10 backdrop-blur-sm"
-              >
-                Watch Demo
-              </Button>
+              <Link href="https://www.youtube.com/watch?v=bXEbQe4g2i0" target="_blank" rel="noopener noreferrer">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="h-14 px-8 rounded-2xl border-white/10 bg-white/5 text-white hover:text-white hover:bg-white/10 backdrop-blur-sm"
+                >
+                  Watch Demo
+                </Button>
+              </Link>
             </div>
 
             <div className="flex items-center gap-6 pt-6 border-t border-white/5">
