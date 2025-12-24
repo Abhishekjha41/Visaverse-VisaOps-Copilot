@@ -10,6 +10,7 @@ import { CopilotResult } from "@/components/copilot/CopilotResult";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
 import { SparklesIcon } from "lucide-react";
+import Link from "next/link";
 
 // --- GLOBE IMPORT ---
 const World = dynamic(() => import("@/components/ui/globe").then((m) => m.World), {
